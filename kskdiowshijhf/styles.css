@@ -1,0 +1,23 @@
+html{
+    margin:0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 60%;
+    width: 80%;
+    background-color: brown;
+    flex-direction: column;
+    padding: 1em;
+    font-size: 1.5rem;
+    color: aliceblue;
+}
