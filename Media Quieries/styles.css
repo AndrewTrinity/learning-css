@@ -1,0 +1,93 @@
+/* Desktop: navbar arriba con los items en fila, 3 divs en fila con img y texto.
+Smartphone:navbar abajo con menu hamburguesa, divs en columna. */
+*{
+    margin: 0px;
+    border: 0px;
+}
+
+body{
+    background-color: cornflowerblue;
+}
+
+#containers{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .container{
+        background-color: burlywood;
+        width: 500px;
+        height: 500px;
+        justify-content: space-between;
+        align-content: center;
+        margin-top: 3em;
+        padding: 1em;
+        border-radius: 5%;
+        margin-bottom: 3em;
+    }
+    .container img{
+        max-height: 450px;
+        max-height: 450px;
+    }
+
+    #container1{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #container2{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #container2 img{
+        width: 450px;
+    }
+
+    #container3{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #container3 img{
+        height: 400px;
+        width: 400px;
+    }
+
+    @media (max-width: 414px){
+        /* Reglas de estilo para pantallas de 414px o menos */
+        #containers{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container{
+            max-width: 370px;
+            max-height: 390px;
+        }
+
+        img{
+            margin: 1em;
+        }
+
+        .container img{
+            max-width: 310px;
+        }
+
+        #container3 img{
+            max-width: 280px;
+            max-height: 280px;
+        }
+
+      }
+  
